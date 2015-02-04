@@ -1,0 +1,54 @@
+
+
+body, html{
+	height: 100%;
+	width: 100%;
+}
+
+a, u{
+	text-decoration: none;
+}
+a{
+	text-decoration: none !important;
+}
+
+.pyro-nav{
+	height: 80px;
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+.pyro-nav-container{
+	width: 970px;
+	margin:auto;
+}
+.pyro-logo-wrapper{
+	float: left;
+	font-size: 48px;
+	margin-top: 10px;
+}
+.pyro-nav-link-wrapper{
+	float:right;
+	font-size: 36px;
+}
+.pyro-nav-link{
+	float:right;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.main-wrapper{
+	height: 800px;
+	width: 100%;
+}
+
+.pyro-footer{
+	position:fixed; 
+	bottom: 0; 
+	width: 100%; 
+	left:0; 
+	height: 50px; 
+	background-color: black; 
+	color:white; 
+	text-align:center;
+}
