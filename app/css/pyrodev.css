@@ -1,9 +1,10 @@
 body, html{
 	height: 100%;
 	width: 100%;
-	margin:0;
+	margin: 0;
 }
 
+/*===========Helpers==========*/
 a, u{
 	text-decoration: none;
 }
@@ -11,6 +12,16 @@ a{
 	text-decoration: none !important;
 }
 
+.pyro-back-cover{
+	position: absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	width: 100%;
+	background-image: url('../assets/main-gradient.png');
+	opacity: .8;
+	z-index:-100;
+}
 .pyro-nav{
 	height: 80px;
 	width: 100%;
@@ -18,7 +29,7 @@ a{
 	color: white;
 }
 .pyro-nav-container{
-	width: 970px;
+	width: 90%;
 	margin:auto;
 }
 .pyro-logo-wrapper{
@@ -46,7 +57,10 @@ a{
 .main-container{
 	height: calc(100% - 80px - 50px);
 	width: 100%;
-	background-color:#95AAF2;
+}
+.pyro-view-containter{
+	width: 90%; 
+	margin:auto;
 }
 
 .pyro-footer{

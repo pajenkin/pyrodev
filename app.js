@@ -14,6 +14,10 @@ var app = angular.module('app', ['ngRoute'])
         templateUrl: 'app/views/home.html',
         controller: 'homeCtrl'
       })
+      .when('/about', {
+        templateUrl: 'app/view/about.html',
+        controller: 'aboutCtrl'
+      })
       .when('/resume', {
         templateUrl: 'app/views/resume.html',
         controller: 'resumeCtrl'

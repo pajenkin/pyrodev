@@ -31,12 +31,15 @@
 			</div>
 		</div>
 	</nav>
-	<div ng-view class="main-container">
-		<!-- This is where all the 'sub' views will be displayed -->
+	<div class="main-container">
+		<div ng-view class="pyro-view-containter"> 
+			<!-- This is where all the 'sub' views will be displayed -->
+		</div>
 	</div>
 	<div class="pyro-footer">
 		This is the footer
 	</div>
+	<div class="pyro-back-cover"></div>
 	<script type="text/javascript" src="/node_modules/angular/angular.js"></script>
 	<script src="/node_modules/angular-route/angular-route.js"></script>
 	<script type="text/javascript" src="app.js"></script>	
