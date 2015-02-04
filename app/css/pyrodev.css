@@ -73,3 +73,41 @@ a{
 	color:white; 
 	text-align:center;
 }
+
+
+/*============ Home Page================*/
+
+.pyro-title-wrapper{
+	margin-top: 50px;
+	text-align: center;
+	width: 90%;
+	position: absolute;
+	color: white;
+}
+.pyro-title-name{
+	font-size: 150px;
+}
+.pyro-title-slogan{
+	font-size: 50px;
+}
+.pyro-title-sub-1{
+	font-size: 40px;
+}
+.pyro-title-sub-2{
+	font-size: 30px;
+}
+.pyro-title-sub-3{
+	font-size: 40px;
+	margin-top: 20px;
+}
+
+
+/*============Home Page=============*/
+.p-about-wrapper{
+	height: 800px;
+	width: 100%;
+}
+
+.p-about-left-subject{
+	height
+}
