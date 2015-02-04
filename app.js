@@ -15,7 +15,7 @@ var app = angular.module('app', ['ngRoute'])
         controller: 'homeCtrl'
       })
       .when('/about', {
-        templateUrl: 'app/view/about.html',
+        templateUrl: 'app/views/about.html',
         controller: 'aboutCtrl'
       })
       .when('/resume', {
