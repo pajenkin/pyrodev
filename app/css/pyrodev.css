@@ -1,8 +1,7 @@
-
-
 body, html{
 	height: 100%;
 	width: 100%;
+	margin:0;
 }
 
 a, u{
@@ -26,20 +25,28 @@ a{
 	float: left;
 	font-size: 48px;
 	margin-top: 10px;
+	color:white;
+}
+.pyro-logo{
+	color:white;
 }
 .pyro-nav-link-wrapper{
 	float:right;
 	font-size: 36px;
 }
-.pyro-nav-link{
+.pyro-nav-item{
 	float:right;
 	margin-right: 20px;
 	margin-top: 20px;
 }
+.pyro-nav-link{
+	color:white;
+}
 
-.main-wrapper{
-	height: 800px;
+.main-container{
+	height: calc(100% - 80px - 50px);
 	width: 100%;
+	background-color:#95AAF2;
 }
 
 .pyro-footer{

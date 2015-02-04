@@ -18,20 +18,20 @@
 
 	-->
 </head>
-<body ng-app="app" style="height: 100%;">
+<body ng-app="app">
 	<nav class="pyro-nav">
 		<div class="pyro-nav-container">
 			<div class="pyro-logo-wrapper" >
-				<a href="#/home">Logo</a>
+				<a class="pyro-logo" href="#/home">Logo</a>
 			</div>
 			<div class="pyro-nav-link-wrapper" >
-				<div class="pyro-nav-link" ><a href="#/contact">Contact</a></div>
-				<div class="pyro-nav-link" ><a href="#/resume">Resume</a></div>
-				<div class="pyro-nav-link" ><a href="#/home">About</a></div>
+				<div class="pyro-nav-item" ><a href="#/contact"><span class="pyro-nav-link">Contact</span></a></div>
+				<div class="pyro-nav-item" ><a href="#/resume"><span class="pyro-nav-link">Resume</span></a></div>
+				<div class="pyro-nav-item" ><a href="#/home"><span class="pyro-nav-link">About</span></a></div>
 			</div>
 		</div>
 	</nav>
-	<div ng-view>
+	<div ng-view class="main-container">
 		<!-- This is where all the 'sub' views will be displayed -->
 	</div>
 	<div class="pyro-footer">
