@@ -111,19 +111,23 @@ a{
 	left:0;
 	height: 100%;
 	width: 100%;
-	background-image: url('../assets/main-gradient.png');
-	opacity: .8;
+	/*background-image: url('../assets/main-gradient.png');*/
+	background-color: #000;
+/*	opacity: .8;*/
 	z-index:-100;
 }
 .pyro-nav{
 	height: 80px;
 	width: 100%;
+	/*background-image: url('../assets/main-gradient.png');*/
 	background-color: #000;
 	color: #ecf0f1;
 }
 .pyro-nav-container{
 	width: 80%;
+	height: 100%;
 	margin:auto;
+	border-bottom: solid 1px #FFF;
 }
 .pyro-logo-wrapper{
 	float: left;
@@ -135,13 +139,17 @@ a{
 	color:#ecf0f1;
 }
 .pyro-nav-link-wrapper{
+	margin-top:35px;
 	float:right;
-	font-size: 36px;
+	font-size: 25px;
+}
+.pyro-nav-link-wrapper a, .pyro-nav-link-wrapper span{
+	height: 100%;
 }
 .pyro-nav-item{
 	float:right;
 	margin-right: 20px;
-	margin-top: 20px;
+	height: 100%;
 }
 .pyro-nav-link{
 	color:#ecf0f1;
@@ -152,7 +160,8 @@ a{
 	width: 100%;
 }
 .pyro-view-containter{
-	width: 80%; 
+	width: 80%;
+	height: 100%; 
 	margin:auto;
 }
 
@@ -171,12 +180,21 @@ a{
 
 /*============ Home Page================*/
 
-.pyro-title-wrapper{
-	margin-top: 50px;
-	text-align: center;
-	width: 80%;
-	position: absolute;
+.pyro-title-block{
 	color: #ecf0f1;
+	text-align:center;
+	height: 100%;
+}
+.pyro-title-block:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em;
+}
+.pyro-title-wrapper{
+	display:inline-block;
+	vertical-align:middle;
 }
 .pyro-title-name{
 	font-size: 150px;

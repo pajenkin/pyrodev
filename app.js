@@ -18,13 +18,13 @@ var app = angular.module('app', ['ngRoute'])
         templateUrl: 'app/views/about.html',
         controller: 'aboutCtrl'
       })
+      .when('/blog',{
+        templateUrl: 'app/views/blog.html',
+        controller: 'blogCtrl'
+      })
       .when('/resume', {
         templateUrl: 'app/views/resume.html',
         controller: 'resumeCtrl'
-      })
-      .when('/contact', {
-        templateUrl: 'app/views/contact.html',
-        controller: 'contactCtrl'
       }).otherwise({
         redirectTo: '/home'
       });
