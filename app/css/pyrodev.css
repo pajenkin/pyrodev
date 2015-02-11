@@ -67,6 +67,7 @@ body, html{
 	height: 100%;
 	width: 100%;
 	margin: 0;
+	background-color: #000;
 }
 
 /*===========Helpers==========*/
@@ -76,6 +77,14 @@ a, u{
 }
 a{
 	text-decoration: none !important;
+}
+.container{
+	width: 80%;
+	margin: auto;
+}
+.image-responsive{
+	width:100%;
+	height: auto;
 }
 
 
@@ -117,6 +126,8 @@ a{
 	z-index:-100;
 }
 .pyro-nav{
+	position: fixed;
+	top: 0;
 	height: 80px;
 	width: 100%;
 	/*background-image: url('../assets/main-gradient.png');*/
@@ -156,13 +167,15 @@ a{
 }
 
 .main-container{
-	height: calc(100% - 80px - 50px);
+	height: calc(100% - 80px);
 	width: 100%;
 }
 .pyro-view-containter{
-	width: 80%;
+	/*width: 80%;*/
+	width: 100%;
 	height: 100%; 
 	margin:auto;
+	margin-top: 80px;
 }
 
 .pyro-footer{
@@ -215,8 +228,31 @@ a{
 	margin-top: 20px;
 }
 
+.pyro-who-block{
+	background-color: #E2E6DB;
+	height: 100%;
+}
+.pyro-who-left-block{
+	padding-top: 10%;
+	width: 50%;
+	height: 100%;
+	float:left;
+	text-align:justify;
+	font-size: 24px;
+}
+.pyro-who-left-block p{
+	padding: 0 10% 5% 10%;
+}
+.pyro-who-right-block{
+	width: 50%;
+	padding-top: 10%;
+	height:100%;
+	float:right;
+}
 
-/*============Home Page=============*/
+
+
+/*============ABOUT Page=============*/
 .p-about-wrapper{
 	height: 800px;
 	width: 100%;
