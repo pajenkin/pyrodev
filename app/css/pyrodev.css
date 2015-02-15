@@ -194,6 +194,9 @@ a{
 /*============ Home Page================*/
 
 .pyro-title-block{
+	background-image: url('../assets/thisdadisonfire.gif');
+	opacity: .7;
+	background-size: cover;
 	color: #ecf0f1;
 	text-align:center;
 	height: 100%;
