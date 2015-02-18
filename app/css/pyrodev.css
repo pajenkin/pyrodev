@@ -133,12 +133,13 @@ a{
 	/*background-image: url('../assets/main-gradient.png');*/
 	background-color: #000;
 	color: #ecf0f1;
+	z-index:100;
+	border-bottom: solid 1px #FFF;
 }
 .pyro-nav-container{
 	width: 80%;
 	height: 100%;
 	margin:auto;
-	border-bottom: solid 1px #FFF;
 }
 .pyro-logo-wrapper{
 	float: left;
@@ -192,11 +193,16 @@ a{
 
 
 /*============ Home Page================*/
-
-.pyro-title-block{
+.pyro-title-background{
 	background-image: url('../assets/thisdadisonfire.gif');
-	opacity: .7;
+	opacity: .3;
 	background-size: cover;
+	position:absolute;
+	top:0;
+	height:100%;
+	width:100%;
+}
+.pyro-title-block{
 	color: #ecf0f1;
 	text-align:center;
 	height: 100%;
@@ -318,5 +324,14 @@ a{
 }
 .p-about-right-text p{
 	margin: 0px 0px 10px 0px;
+}
+
+
+/*========= RESUMEM ============*/
+
+.pyro-resume-block{
+	height:100%;
+	width: 100%;
+	background-color: #FFF;
 }
 
