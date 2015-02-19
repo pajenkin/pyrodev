@@ -38,6 +38,14 @@ var app = angular.module('app', ['ngRoute'])
             scrollTop: angular.element(target).offset().top - 80 + 2
           }, 1000);
          }
+      });
+
+      angular.element(".contact").on('click', function(event){
+        var contactModal = new Modal({
+          content: angular.element('.contactModal')[0]
+        });
+
+        contactModal.open();
       })
     }]);
 

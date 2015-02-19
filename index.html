@@ -19,7 +19,7 @@
 	<title>PyroDev</title>
 	<link rel="stylesheet" type="text/css" href="app/css/pyrodev.css">
 	<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
-
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 </head>
 <body ng-app="app">
 	<nav class="pyro-nav">
@@ -28,9 +28,9 @@
 				<a class="pyro-logo" href="#home">PyroDev</a>
 			</div>
 			<div class="pyro-nav-link-wrapper" >
-				<div class="pyro-nav-item" ><a href="#/contact"><span class="pyro-nav-link">Contact</span></a></div>
+				<div class="pyro-nav-item contact" ><a href="#/contact"><span class="pyro-nav-link">Contact</span></a></div>
 				<!-- <div class="pyro-nav-item"><a href="#/blog"><span class="pyro-nav-link">Blog</span></a></div> -->
-				<div class="pyro-nav-item page-item" ><a href="#resume"><span class="pyro-nav-link">Resume</span></a></div>
+				<div class="pyro-nav-item page-item" ><a href="#flo"><span class="pyro-nav-link">WrkFlo</span></a></div>
 				<div class="pyro-nav-item page-item" ><a href="#about"><span class="pyro-nav-link">About</span></a></div>
 			</div>
 		</div>
@@ -38,6 +38,21 @@
 	<div class="main-container">
 		<div ng-view class="pyro-view-containter"> 
 			<!-- This is where all the 'sub' views will be displayed -->
+		</div>
+	</div>
+	<div class="contactModal" style="display:none;">
+		<div class="contactEmail" style="height:30%">
+			<p>This is the email section.</p>
+		</div>
+		<div class="contactTweet" style="height:30%">
+			<p>Tweet at me!</p>
+		</div>
+		<div class="contactLinks" style="height:30%">
+			<ul class="pyro-links">
+				<li><i class="fa fa-github"></i></li>
+				<li><i class="fa fa-linkedin-square"></i></li>
+				<li><i class="fa fa-twitter-square"></i></li>
+			</ul>
 		</div>
 	</div>
 <!-- 	<div class="pyro-footer">
@@ -51,6 +66,7 @@
 	<script type="text/javascript" src="app/scripts/jquery.js"></script>
 	<script type="text/javascript" src="/node_modules/angular/angular.js"></script>
 	<script src="/node_modules/angular-route/angular-route.js"></script>
-	<script type="text/javascript" src="app.js"></script>	
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="scripts/pyro-custom-modal.js"></script>	
 </body>
 </html>

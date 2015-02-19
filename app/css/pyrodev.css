@@ -68,6 +68,7 @@ body, html{
 	width: 100%;
 	margin: 0;
 	background-color: #000;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /*===========Helpers==========*/
@@ -327,11 +328,217 @@ a{
 }
 
 
-/*========= RESUMEM ============*/
+/*========= WrkFlo ============*/
 
-.pyro-resume-block{
+.pyro-flo-block{
 	height:100%;
 	width: 100%;
 	background-color: #FFF;
+}
+
+.pyro-flo-contents{
+	padding-top: 70px;
+	height: 90%;
+}
+
+.pyro-flo-row{
+	width: 100%;
+	height: 30%;
+}
+.pyro-flo-row:after{
+	clear:both;
+}
+.pyro-flo-left-container{
+	width: 50%;
+	float:left;
+	height: 100%;
+}
+.pyro-flo-right-container{
+	width: 50%;
+	float:right;
+	height: 100%;
+}
+.pyro-flo-left-container img, .pyro-flo-right-container img{
+	height: 100%;
+	width: auto;
+	padding-left: 25%;
+} 
+
+
+/*======== Modal ==============*/
+/* Modal Base CSS */
+.pyro-modal-overlay
+{
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: 1ms opacity ease;
+       -moz-transition: 1ms opacity ease;
+        -ms-transition: 1ms opacity ease;
+         -o-transition: 1ms opacity ease;
+            transition: 1ms opacity ease;
+
+    background: rgba(0,0,0,.6);
+}
+
+.pyro-modal-modal
+{
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+
+    opacity: 0;
+
+    width: 94%;
+    height: calc(100% - 80px);
+    padding: 24px 20px;
+
+    -webkit-transition: 1ms opacity ease;
+       -moz-transition: 1ms opacity ease;
+        -ms-transition: 1ms opacity ease;
+         -o-transition: 1ms opacity ease;
+            transition: 1ms opacity ease;
+
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+    border-radius: 2px;
+    background: #fff;
+}
+.pyro-modal-content{
+	height:100%;
+	width:100%;
+}
+.pyro-modal-modal.pyro-modal-open.pyro-modal-anchored
+{
+    top: 20px;
+
+    -webkit-transform: translate(-50%, 0);
+       -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+         -o-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+}
+
+.pyro-modal-modal.pyro-modal-open
+{
+    opacity: 1;
+}
+
+.pyro-modal-overlay.pyro-modal-open
+{
+    opacity: 1;
+
+}
+
+/* Close Button */
+.pyro-modal-close
+{
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 12px;
+
+    width: 50%;
+
+    position: absolute;
+
+    bottom: 5px;
+    left: 25%;
+
+    padding: 5px 30px 5px 30px;
+    margin: auto;
+
+    cursor: pointer;
+
+    color: #fff;
+    border: 0;
+    outline: none;
+}
+
+.pyro-modal-close:hover
+{
+    background: #c0392b;
+}
+
+/* Default Animation */
+
+.pyro-modal-overlay.fade-and-drop
+{
+    display: block;
+
+    opacity: 0;
+}
+
+.pyro-modal-modal.fade-and-drop
+{
+    top: -300%;
+
+    opacity: 1;
+
+    display: block;
+}
+
+.pyro-modal-modal.fade-and-drop.pyro-modal-open
+{
+    top: 50%;
+
+    -webkit-transition: 500ms top 500ms ease;
+       -moz-transition: 500ms top 500ms ease;
+        -ms-transition: 500ms top 500ms ease;
+         -o-transition: 500ms top 500ms ease;
+            transition: 500ms top 500ms ease;
+}
+
+.pyro-modal-modal.fade-and-drop.pyro-modal-open.pyro-modal-anchored
+{
+
+    -webkit-transition: 500ms top 500ms ease;
+       -moz-transition: 500ms top 500ms ease;
+        -ms-transition: 500ms top 500ms ease;
+         -o-transition: 500ms top 500ms ease;
+            transition: 500ms top 500ms ease;
+}
+
+.pyro-modal-overlay.fade-and-drop.pyro-modal-open
+{
+    top: 0;
+
+    -webkit-transition: 500ms opacity ease;
+       -moz-transition: 500ms opacity ease;
+        -ms-transition: 500ms opacity ease;
+         -o-transition: 500ms opacity ease;
+            transition: 500ms opacity ease;
+
+    opacity: 1;
+}
+
+.pyro-modal-modal.fade-and-drop
+{
+    -webkit-transition: 500ms top ease;
+       -moz-transition: 500ms top ease;
+        -ms-transition: 500ms top ease;
+         -o-transition: 500ms top ease;
+            transition: 500ms top ease;
+}
+
+.pyro-modal-overlay.fade-and-drop
+{
+    -webkit-transition: 500ms opacity 500ms ease;
+       -moz-transition: 500ms opacity 500ms ease;
+        -ms-transition: 500ms opacity 500ms ease;
+         -o-transition: 500ms opacity 500ms ease;
+            transition: 500ms opacity 500ms ease;
 }
 
